@@ -45,6 +45,17 @@
     <button type="button"
     onclick="document.getElementById('demo').innerHTML = Date()">Click me please,
      bro!</button>
-  </div>
+     <p></p>
+     <p id="myDates"></p>
+     <script type="text/javascript">
+     var myDate = new Date (),
+     month = myDate.getMonth(),
+     day = myDate.getDate(),
+     year = myDate.getFullYear();
+
+     var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+document.getElementById("myDates").innerHTML = months[month] + " " + day + ", " + year;
+     </script>
+   </div>
 </body>
 </html>
