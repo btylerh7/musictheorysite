@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-/*use a media query to make responsive page for mobile phones!*/
+/*use a media query to make responsive page for mobile phones! Try W3.CSS?*/
 body {
   font-family: Times New Roman, serif;
   background-image: url("blue abstract image (1).jpg");
