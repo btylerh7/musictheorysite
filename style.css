@@ -2,31 +2,12 @@
   box-sizing: border-box;
 }
 /*use a media query to make responsive page for mobile phones! Try W3.CSS?*/
-body {
-  font-family: Times New Roman, serif;
-  background-image: url("blue abstract image (1).jpg");
-  /*This image was collected from solidbackgrounds.com.
-  It is called "Blue Abstract Noise."*/
-  color: white;
-  background-color= white;
-  padding-left: 35px;
-  padding-right: 35px;
+html {
+  font-size: 16px;
 }
-p {
-  font-size: 24px;
-}
-div.transbox {
-  margin: 20px;
-  color: white;
-  background-color: rgb(69,69,69,.3);
-  border: 1px solid black;
-  padding: 0 40px;
-}
-
 header{
   background-color: rgb(52, 73, 94,.69);
-  margin-left: -35px;
-  margin-right: -35px;
+  margin: auto;
 }
 header::after {
   content: '';
@@ -35,19 +16,18 @@ header::after {
 }
 .container {
   width: 80%;
-}
-.container h1 {
-  font-style: 38px;
-  float: left;
-  margin-left: 30px;
+  margin-left: 75px;
+  margin-right: -75px;
 }
 nav {
   float: right;
 }
 nav ul {
   list-style: none;
-  margin: 0
-  padding: 0
+  margin: 0;
+  margin-top: 25px;
+  margin-right:-75px;
+  padding: 0;
 }
 nav a {
   color: white;
@@ -77,4 +57,42 @@ nav a::before {
 }
 nav a:hover::before {
   width: 100%;
+}
+
+
+div.transbox {
+  color: white;
+  background-color: rgb(69,69,69,.3);
+  border: 1px solid black;
+  margin: auto;
+  width: 80%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 25px;
+}
+body {
+  font-family: Times New Roman, serif;
+  background-image: url("blue abstract image (1).jpg");
+  /*This image was collected from solidbackgrounds.com.
+  It is called "Blue Abstract Noise."*/
+  color: white;
+  background-color= white;
+  text-align: justify;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
 }
